@@ -47,4 +47,3 @@ app.http("visitorCount", {
     }
   }
 });
-
