@@ -24,3 +24,5 @@ jobs:
 
       - name: Check JavaScript syntax
         run: node --check api/visitorCount.js
+      - name: Run visitor counter simulation tests
+        run: node --test tests/visitorCount.test.js
