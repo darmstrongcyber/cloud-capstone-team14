@@ -1,3 +1,4 @@
+
 name: Validate Visitor Counter API
 
 on:
@@ -24,5 +25,9 @@ jobs:
 
       - name: Check JavaScript syntax
         run: node --check api/visitorCount.js
+
+      - name: Check visitor counter test syntax
+        run: node --check tests/visitorCount.test.js
+
       - name: Run visitor counter simulation tests
         run: node --test tests/visitorCount.test.js
